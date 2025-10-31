@@ -1,2 +1,2 @@
 # immix-parent
-this is a light weight repository to bundle multiple repositories together locally
+this is a lightweight repository to bundle multiple repositories together locally

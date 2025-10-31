@@ -1,0 +1,127 @@
+[versions]
+aeronVersion = "1.47.4"
+agronaVersion = "2.1.0"
+apacheCommonsVersion = "3.6"
+bablVersion = "0.12.0"
+checkstyleVersion = "10.12.1"
+commonsCliVersion = "1.6.0"
+commonsCsvVersion = "1.10.0"
+commonsIOVersion = "2.15.1"
+fastutilVersion = "8.5.13"
+flinkVersion = "1.16.1"
+gitSemverVersion = "0.12.6"
+googleGuavaVersion = "32.1.2-jre"
+hdrHistogramVersion = "2.2.1"
+jacksonVersion = "2.17.0"
+jlineVersion = "3.26.3"
+jmhPluginVersion = "0.7.2"
+jmhVersion = "1.36"
+jolVersion = "0.17"
+junitPlatformVersion = "1.9.3"
+junitVersion = "5.9.3"
+lombokVersion = "1.18.34"
+log4j2Version = "2.24.1"
+logbackVersion = "1.4.8"
+mockitoVersion = "5.4.0"
+nettyVersion = "4.1.111.Final"
+nettyNativeVersion = "2.0.65.Final"
+picocliVersion = "4.7.4"
+picoJlineVersion = "4.7.4"
+reflectionVersion = "0.10.2"
+sbeToolVersion = "1.34.1"
+sbeVersion = "1.34.1"
+slf4jVersion = "2.0.7"
+springBootLoaderVersion = "3.1.5"
+threadAffinityVersion = "3.23.3"
+immixSdkVersion = "1.2.0"
+vertxVersion = "4.5.8"
+javersVersion = "7.5.0"
+prometheusVersion = "1.0.0"
+awsSdkVersion = "2.26.25"
+asciitableVersion = "0.3.2"
+decimal4jVersion = "1.0.3"
+springContextVersion = "6.1.13"
+springDataJpaVersion = "3.3.3"
+springTxVersion = "6.1.13"
+postgresqlVersion = "42.7.4"
+hibernateVersion = "6.6.0.Final"
+mapStructVersion = "1.6.0"
+flywayDbVersion = "10.18.0"
+
+[plugins]
+gitSemverPlugin = { id = "com.github.jmongard.git-semver-plugin", version.ref = "gitSemverVersion" }
+jmhPlugin = { id = "me.champeau.jmh", version.ref = "jmhPluginVersion" }
+flywayDbPlugin = { id = "org.flywaydb.flyway", version.ref = "flywayDbVersion" }
+
+[libraries]
+jackson = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jacksonVersion" }
+jacksonToml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-toml", version.ref = "jacksonVersion" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombokVersion" }
+aeron = { group = "io.aeron", name = "aeron-all", version.ref = "aeronVersion" }
+aeronTest = { group = "io.aeron", name = "aeron-test-support", version.ref = "aeronVersion" }
+agrona = { group = "org.agrona", name = "agrona", version.ref = "agronaVersion" }
+sbe = { group = "uk.co.real-logic", name = "sbe-all", version.ref = "sbeVersion" }
+sbeTool = { group = "uk.co.real-logic", name = "sbe-tool", version.ref = "sbeToolVersion" }
+jupiterEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitVersion" }
+jupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitVersion" }
+jupiterParams = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junitVersion" }
+jupiterPlatform = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junitPlatformVersion" }
+checkstyle = { group = "com.puppycrawl.tools", name = "checkstyle", version.ref = "checkstyleVersion" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4jVersion" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logbackVersion" }
+mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoVersion" }
+mockitoJunit = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockitoVersion" }
+nettyAll = { group = "io.netty", name = "netty-all", version.ref = "nettyVersion" }
+nettyNativeBoringSsl = { group = "io.netty", name = "netty-tcnative-boringssl-static", version.ref = "nettyNativeVersion" }
+jmhcore = { group = "org.openjdk.jmh", name = "jmh-core", version.ref = "jmhVersion" }
+jmhannprocess = { group = "org.openjdk.jmh", name = "jmh-generator-annprocess", version.ref = "jmhVersion" }
+picocli = { group = "info.picocli", name = "picocli", version.ref = "picocliVersion" }
+jline = { group = "org.jline", name = "jline", version.ref = "jlineVersion" }
+jlineGroovy = { group = "org.jline", name = "jline-groovy", version.ref = "jlineVersion" }
+picoJline = { group = "info.picocli", name = "picocli-shell-jline3", version.ref = "picoJlineVersion" }
+log4jCore = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j2Version" }
+log4jSlf4jImpl = { group = "org.apache.logging.log4j", name = "log4j-slf4j2-impl", version.ref = "log4j2Version" }
+log4jApi = { group = "org.apache.logging.log4j", name = "log4j-api", version.ref = "log4j2Version" }
+log4jJul = { group = "org.apache.logging.log4j", name = "log4j-jul", version.ref = "log4j2Version" }
+reflections = { group = "org.reflections", name = "reflections", version.ref = "reflectionVersion" }
+apacheCommonsMath = { group = "org.apache.commons", name = "commons-math3", version.ref = "apacheCommonsVersion" }
+apacheCommonsLang = { group = "org.apache.commons", name = "commons-lang3", version.ref = "apacheCommonsVersion" }
+googleGuava = { group = "com.google.guava", name = "guava", version.ref = "googleGuavaVersion" }
+springBootLoader = { group = "org.springframework.boot", name = "spring-boot-loader", version.ref = "springBootLoaderVersion" }
+threadAffinity = { group = "net.openhft", name = "affinity", version.ref = "threadAffinityVersion" }
+jol = { group = "org.openjdk.jol", name = "jol-core", version.ref = "jolVersion" }
+commonsCli = { group = "commons-cli", name = "commons-cli", version.ref = "commonsCliVersion" }
+commonsIO = { group = "commons-io", name = "commons-io", version.ref = "commonsIOVersion" }
+commonsCsv = { group = "org.apache.commons", name = "commons-csv", version.ref = "commonsCsvVersion" }
+hdrHistogram = { group = "org.hdrhistogram", name = "HdrHistogram", version.ref = "hdrHistogramVersion" }
+bablWs = { group = "xyz.immix.trading", name = "babl", version.ref = "bablVersion" }
+immixSdk = { group = "com.coinstrats", name = "instruments-metadata-graphql-sdk", version.ref = "immixSdkVersion" }
+fastutil = { group = "it.unimi.dsi", name = "fastutil", version.ref = "fastutilVersion" }
+flink = { group = "org.apache.flink", name = "flink-java", version.ref = "flinkVersion" }
+vertxCore = { group = "io.vertx", name = "vertx-core", version.ref = "vertxVersion" }
+vertxWeb = { group = "io.vertx", name = "vertx-web", version.ref = "vertxVersion" }
+javers = { group = "org.javers", name = "javers-core", version.ref = "javersVersion" }
+awsDynamodb = { group = "software.amazon.awssdk", name = "dynamodb", version.ref = "awsSdkVersion" }
+awsS3 = { group = "software.amazon.awssdk", name = "s3", version.ref = "awsSdkVersion" }
+prometheusCore = { group = "io.prometheus", name = "prometheus-metrics-core", version.ref = "prometheusVersion" }
+prometheusMetric = { group = "io.prometheus", name = "prometheus-metrics-instrumentation-jvm", version.ref = "prometheusVersion" }
+prometheusExporter = { group = "io.prometheus", name = "prometheus-metrics-exporter-httpserver", version.ref = "prometheusVersion" }
+asciiTable = { group = "de.vandermeer", name = "asciitable", version.ref = "asciitableVersion" }
+decimal4j = { group = "org.decimal4j", name = "decimal4j", version.ref = "decimal4jVersion" }
+springContext = { group = "org.springframework", name = "spring-context", version.ref = "springContextVersion" }
+springDataJpa = { group = "org.springframework.data", name = "spring-data-jpa", version.ref = "springDataJpaVersion" }
+springTx = { group = "org.springframework", name = "spring-tx", version.ref = "springTxVersion" }
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresqlVersion" }
+hibernate = { group = "org.hibernate.orm", name = "hibernate-core", version.ref = "hibernateVersion" }
+mapStruct = { group = "org.mapstruct", name = "mapstruct", version.ref = "mapStructVersion" }
+mapStructAnnotationProcessor = { group = "org.mapstruct", name = "mapstruct-processor", version.ref = "mapStructVersion" }
+flywaydb = { group = "org.flywaydb", name = "flyway-core", version.ref = "flywayDbVersion" }
+flywayPostgresql = { group = "org.flywaydb", name = "flyway-database-postgresql", version.ref = "flywayDbVersion" }
+
+
+[bundles]
+testing = ["jupiterApi", "jupiterEngine", "jupiterPlatform", "jupiterParams", "mockitoCore", "mockitoJunit", "jol"]
+log4j2 = ["log4jCore", "log4jSlf4jImpl", "log4jApi", "log4jJul"]
+prometheus = ["prometheusCore", "prometheusMetric", "prometheusExporter"]
+persistence = ["springContext", "springDataJpa", "springTx", "postgresql", "hibernate"]
+flyway = ["flywaydb", "flywayPostgresql"]

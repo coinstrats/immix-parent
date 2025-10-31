@@ -64,3 +64,8 @@ replay_pid*
 
 ### coding agent
 */.zencoder/*
+/gradle.xml
+/kotlinc.xml
+/misc.xml
+/vcs.xml
+/workspace.xml
